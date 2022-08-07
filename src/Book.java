@@ -1,5 +1,5 @@
 public class Book {
-    String title;
+    private final String title;
     int yearOfPublication;
     Author author;
 
@@ -15,10 +15,19 @@ public class Book {
     public String getTitle () {
         return  this.title;
     }
+
+
     public int getYearOfPublication() {
         return this.yearOfPublication;
     }
+
     public void setYearOfPublication(int yearOfPublication ) {
         this.yearOfPublication = yearOfPublication;
+    }
+    @Override
+    public String toString() {
+        return author + ":" +
+                title + ":" + yearOfPublication;
+
     }
 }
