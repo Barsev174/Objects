@@ -1,7 +1,7 @@
 public class Book {
     private final String title;
     int yearOfPublication;
-    Author author;
+    private final Author author;
 
     public Book(Author author, String title, int yearOfPublication) {
         this.title = title;
@@ -26,7 +26,7 @@ public class Book {
     }
     @Override
     public String toString() {
-        return author + ":" +
+        return author.toString() + ":" +
                 title + ":" + yearOfPublication;
 
     }

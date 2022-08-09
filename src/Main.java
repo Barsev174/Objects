@@ -10,10 +10,11 @@ public class Main {
         Book bookOne = new Book(levTolstoy, "Война и мир", 2000);
         Book bookTwo = new Book(nikolayGogol, "Мертвые души", 1966);
         Book bookTree = new Book(levTolstoy, "Детство", 1900);
-        System.out.println("bookOne.author.toString() = " + bookOne.author.toString());
+        System.out.println("bookOne.author.toString() = " + bookOne.getAuthor().toString());
         System.out.println("bookOne.yearOfPublication = " + bookOne.yearOfPublication);
         bookOne.setYearOfPublication(1960);
         System.out.println("bookOne.yearOfPublication = " + bookOne.yearOfPublication);
+        System.out.println(bookOne);
 
         listOfBook[0] = bookOne;
         listOfBook[1] = bookTwo;
